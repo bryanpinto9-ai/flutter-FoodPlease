@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:provider/provider.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -43,6 +44,17 @@ class FoodPleaseApp extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => CartProvider()),
       ],
       child: MaterialApp(
+        builder: (context, child) {
+          if (kIsWeb) {
+            return Center(
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 450),
+                child: child,
+              ),
+            );
+          }
+          return child!;
+        },
         title: 'FoodPlease+',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
