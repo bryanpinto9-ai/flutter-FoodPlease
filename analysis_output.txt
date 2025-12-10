@@ -1,0 +1,50 @@
+Resolving dependencies...
+Downloading packages...
+  characters 1.4.0 (1.4.1 available)
+  flutter_lints 5.0.0 (6.0.0 available)
+  lints 5.1.1 (6.0.0 available)
+  matcher 0.12.17 (0.12.18 available)
+  material_color_utilities 0.11.1 (0.13.0 available)
+  meta 1.16.0 (1.17.0 available)
+  test_api 0.7.6 (0.7.8 available)
+Got dependencies!
+7 packages have newer versions incompatible with dependency constraints.
+Try `flutter pub outdated` for more information.
+Analyzing food_please...                                        
+
+   info - Parameter 'key' could be a super parameter - lib\main.dart:35:9 - use_super_parameters
+  error - The named parameter 'order' is required, but there's no corresponding argument - lib\main.dart:108:50 - missing_required_argument
+   info - Unnecessary 'this.' qualifier - lib\models\order_model.dart:41:8 - unnecessary_this
+   info - The private field _products could be 'final' - lib\providers\app_provider.dart:13:17 - prefer_final_fields
+   info - The private field _orders could be 'final' - lib\providers\app_provider.dart:46:15 - prefer_final_fields
+   info - The private field _products could be 'final' - lib\providers\data_provider.dart:6:17 - prefer_final_fields
+   info - The private field _orders could be 'final' - lib\providers\data_provider.dart:30:15 - prefer_final_fields
+   info - Don't invoke 'print' in production code - lib\screens\auth\login_screen.dart:29:11 - avoid_print
+   info - Don't invoke 'print' in production code - lib\screens\auth\login_screen.dart:32:11 - avoid_print
+   info - Don't invoke 'print' in production code - lib\screens\auth\login_screen.dart:35:11 - avoid_print
+   info - Parameter 'key' could be a super parameter - lib\screens\client\cart_screen.dart:8:9 - use_super_parameters
+   info - Parameter 'key' could be a super parameter - lib\screens\client\checkout_screen.dart:9:9 - use_super_parameters
+warning - Unused import: '../../providers/cart_provider.dart' - lib\screens\client\client_home_screen.dart:4:8 - unused_import
+  error - Target of URI doesn't exist: '../product_detail_screen.dart' - lib\screens\client\client_home_screen.dart:7:8 - uri_does_not_exist
+   info - Parameter 'key' could be a super parameter - lib\screens\client\client_home_screen.dart:10:9 - use_super_parameters
+  error - The method 'ProductDetailScreen' isn't defined for the type 'ClientHomeScreen' - lib\screens\client\client_home_screen.dart:93:64 - undefined_method
+warning - Unused import: '../../models/order_model.dart' - lib\screens\client\order_status_screen.dart:3:8 - unused_import
+   info - Parameter 'key' could be a super parameter - lib\screens\client\order_status_screen.dart:6:9 - use_super_parameters
+   info - Parameter 'key' could be a super parameter - lib\screens\client\product_detail_screen.dart:9:9 - use_super_parameters
+   info - Parameter 'key' could be a super parameter - lib\screens\delivery\delivery_detail_screen.dart:9:9 - use_super_parameters
+  error - The named parameter 'marginBottom' isn't defined - lib\screens\delivery\delivery_detail_screen.dart:36:113 - undefined_named_parameter
+   info - Unnecessary use of 'toList' in a spread - lib\screens\delivery\delivery_detail_screen.dart:67:22 - unnecessary_to_list_in_spreads
+   info - Parameter 'key' could be a super parameter - lib\screens\delivery\delivery_home_screen.dart:9:9 - use_super_parameters
+   info - Parameter 'key' could be a super parameter - lib\screens\login_screen.dart:7:9 - use_super_parameters
+   info - Parameter 'key' could be a super parameter - lib\screens\owner\edit_product_screen.dart:10:9 - use_super_parameters
+   info - Parameter 'key' could be a super parameter - lib\screens\owner\owner_dashboard_screen.dart:7:9 - use_super_parameters
+   info - Parameter 'key' could be a super parameter - lib\screens\owner\product_management_screen.dart:8:9 - use_super_parameters
+   info - Parameter 'key' could be a super parameter - lib\screens\profile_screen.dart:9:9 - use_super_parameters
+   info - Parameter 'key' could be a super parameter - lib\screens\register_screen.dart:4:9 - use_super_parameters
+   info - Parameter 'key' could be a super parameter - lib\screens\welcome_screen.dart:4:9 - use_super_parameters
+   info - 'MaterialStateProperty' is deprecated and shouldn't be used. Use WidgetStateProperty instead. Moved to the Widgets layer to make code available outside of Material. This feature was deprecated after v3.19.0-0.3.pre - lib\theme\sketchy_theme.dart:63:15 - deprecated_member_use
+   info - Parameter 'key' could be a super parameter - lib\widgets\client_bottom_nav.dart:6:9 - use_super_parameters
+   info - Parameter 'key' could be a super parameter - lib\widgets\delivery_bottom_nav.dart:6:9 - use_super_parameters
+   info - Parameter 'key' could be a super parameter - lib\widgets\owner_bottom_nav.dart:6:9 - use_super_parameters
+  error - The name 'MyApp' isn't a class - test\widget_test.dart:16:35 - creation_with_non_type
+
